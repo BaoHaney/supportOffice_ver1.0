@@ -1,13 +1,5 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.IO;
 using Exceln = Microsoft.Office.Interop.Excel;
 using System.Runtime.InteropServices;
 
@@ -19,21 +11,6 @@ namespace supportOffice
         public Excel()
         {
             InitializeComponent();
-        }
-
-        private void Excel_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox16_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void textBox5_TextChanged(object sender, EventArgs e)
-        {
-
         }
 
         private void CreateEX_Click(object sender, EventArgs e)
@@ -92,11 +69,6 @@ namespace supportOffice
             {
                 textBox1.Text = dialog.SelectedPath;
             }
-        }
-
-        private void label3_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

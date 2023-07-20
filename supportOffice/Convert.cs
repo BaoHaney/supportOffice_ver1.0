@@ -1,24 +1,15 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Diagnostics;
-using System.Drawing;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement.Window;
-using Word = Microsoft.Office.Interop.Word;
 using Spire.Pdf;
 
 namespace supportOffice
 {
     public partial class Convert : Form
     {
-        int option1, option2;
+        int option;
         Microsoft.Office.Interop.Word.Document wordDoc { get; set; }
         public Convert()
         {
@@ -46,14 +37,14 @@ namespace supportOffice
 
         private void optionPtW_CheckedChanged(object sender, EventArgs e)
         {
-            option2 = 1;
-            label1.Text = "PDF to PDF";
+            option = 0;
+            label1.Text = "PDF to Word";
         }
 
         private void convert1_Click(object sender, EventArgs e)
         {
             Microsoft.Office.Interop.Word.Application app = new Microsoft.Office.Interop.Word.Application();
-            if (option1 == 1)
+            if (option == 1)
             {
                 string temp = Savet1.Text.Replace(".docx", ".pdf");
                 string urlSave = Savet2.Text + "/" + Path.GetFileName(temp);
@@ -86,7 +77,7 @@ namespace supportOffice
         }
             private void optionWtP_CheckedChanged(object sender, EventArgs e)
         {
-            option1 = 1;
+            option = 1;
             label1.Text = "Word to PDF";
         }
     }

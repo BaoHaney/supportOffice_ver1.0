@@ -161,7 +161,6 @@
             this.label3.Size = new System.Drawing.Size(112, 13);
             this.label3.TabIndex = 13;
             this.label3.Text = "Address Folder Output";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Combine
             // 

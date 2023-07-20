@@ -235,7 +235,6 @@
             this.input16.Name = "input16";
             this.input16.Size = new System.Drawing.Size(134, 20);
             this.input16.TabIndex = 49;
-            this.input16.TextChanged += new System.EventHandler(this.textBox16_TextChanged);
             // 
             // input25
             // 
@@ -278,7 +277,6 @@
             this.input22.Name = "input22";
             this.input22.Size = new System.Drawing.Size(134, 20);
             this.input22.TabIndex = 43;
-            this.input22.TextChanged += new System.EventHandler(this.textBox5_TextChanged);
             // 
             // input21
             // 
@@ -380,7 +378,6 @@
             this.label3.Size = new System.Drawing.Size(280, 37);
             this.label3.TabIndex = 79;
             this.label3.Text = "Create File Excel";
-            this.label3.Click += new System.EventHandler(this.label3_Click);
             // 
             // Excel
             // 
@@ -430,7 +427,6 @@
             this.Controls.Add(this.CreateEX);
             this.Name = "Excel";
             this.Text = "Excel";
-            this.Load += new System.EventHandler(this.Excel_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
