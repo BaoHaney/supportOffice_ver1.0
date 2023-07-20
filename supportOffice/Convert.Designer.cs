@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelConvert = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
             this.convert1 = new System.Windows.Forms.Button();
             this.save1 = new System.Windows.Forms.Button();
             this.browser1 = new System.Windows.Forms.Button();
@@ -38,13 +40,13 @@
             this.optionWtP = new System.Windows.Forms.RadioButton();
             this.label1 = new System.Windows.Forms.Label();
             this.openFileDialog1 = new System.Windows.Forms.OpenFileDialog();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.radioButton1 = new System.Windows.Forms.RadioButton();
             this.panelConvert.SuspendLayout();
             this.SuspendLayout();
             // 
             // panelConvert
             // 
+            this.panelConvert.Controls.Add(this.radioButton1);
             this.panelConvert.Controls.Add(this.label3);
             this.panelConvert.Controls.Add(this.label2);
             this.panelConvert.Controls.Add(this.convert1);
@@ -55,11 +57,29 @@
             this.panelConvert.Controls.Add(this.optionPtW);
             this.panelConvert.Controls.Add(this.optionWtP);
             this.panelConvert.Controls.Add(this.label1);
-            this.panelConvert.Location = new System.Drawing.Point(107, 11);
+            this.panelConvert.Location = new System.Drawing.Point(105, 11);
             this.panelConvert.Margin = new System.Windows.Forms.Padding(2);
             this.panelConvert.Name = "panelConvert";
             this.panelConvert.Size = new System.Drawing.Size(617, 528);
             this.panelConvert.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(263, 331);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(110, 13);
+            this.label3.TabIndex = 11;
+            this.label3.Text = "Address Folder output";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(272, 253);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(91, 13);
+            this.label2.TabIndex = 10;
+            this.label2.Text = "Address File Input";
             // 
             // convert1
             // 
@@ -99,7 +119,7 @@
             this.Savet2.Location = new System.Drawing.Point(188, 355);
             this.Savet2.Margin = new System.Windows.Forms.Padding(2);
             this.Savet2.Name = "Savet2";
-            this.Savet2.Size = new System.Drawing.Size(272, 20);
+            this.Savet2.Size = new System.Drawing.Size(296, 20);
             this.Savet2.TabIndex = 6;
             // 
             // Savet1
@@ -107,13 +127,13 @@
             this.Savet1.Location = new System.Drawing.Point(188, 279);
             this.Savet1.Margin = new System.Windows.Forms.Padding(2);
             this.Savet1.Name = "Savet1";
-            this.Savet1.Size = new System.Drawing.Size(272, 20);
+            this.Savet1.Size = new System.Drawing.Size(296, 20);
             this.Savet1.TabIndex = 5;
             // 
             // optionPtW
             // 
             this.optionPtW.AutoSize = true;
-            this.optionPtW.Location = new System.Drawing.Point(320, 208);
+            this.optionPtW.Location = new System.Drawing.Point(266, 208);
             this.optionPtW.Margin = new System.Windows.Forms.Padding(2);
             this.optionPtW.Name = "optionPtW";
             this.optionPtW.Size = new System.Drawing.Size(87, 17);
@@ -151,23 +171,18 @@
             // 
             this.openFileDialog1.FileName = "openFileDialog1";
             // 
-            // label2
+            // radioButton1
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(262, 253);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(91, 13);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "Address File Input";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(262, 331);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(110, 13);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Address Folder output";
+            this.radioButton1.AutoSize = true;
+            this.radioButton1.Location = new System.Drawing.Point(403, 208);
+            this.radioButton1.Margin = new System.Windows.Forms.Padding(2);
+            this.radioButton1.Name = "radioButton1";
+            this.radioButton1.Size = new System.Drawing.Size(81, 17);
+            this.radioButton1.TabIndex = 12;
+            this.radioButton1.TabStop = true;
+            this.radioButton1.Text = "IMG to PDF";
+            this.radioButton1.UseVisualStyleBackColor = true;
+            this.radioButton1.Click += new System.EventHandler(this.radioButton1_Click);
             // 
             // Convert
             // 
@@ -197,5 +212,6 @@
         private System.Windows.Forms.OpenFileDialog openFileDialog1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.RadioButton radioButton1;
     }
 }
