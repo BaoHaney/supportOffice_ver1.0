@@ -45,7 +45,7 @@ namespace supportOffice
                     using (PdfReader reader = new PdfReader(chooseFileText.Text))
                     {
                         Document document = new Document();
-                        PdfCopy copy = new PdfCopy(document, new FileStream(saveAsText.Text + "\\" + Path.GetFileName(chooseFileText.Text), FileMode.Create));
+                        PdfCopy copy = new PdfCopy(document, new FileStream(saveAsText.Text + "\\" + $"{startPage.Value}-{endPage.Value}" + Path.GetFileName(chooseFileText.Text), FileMode.Create));
                         document.Open();
 
                         for (int pagenumber = (int)startPage.Value; pagenumber <= endPage.Value & pagenumber >= startPage.Value; pagenumber++)
