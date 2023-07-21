@@ -36,58 +36,59 @@
             this.button5 = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // Convert
             // 
-            this.Convert.Location = new System.Drawing.Point(32, 65);
+            this.Convert.Location = new System.Drawing.Point(32, 56);
             this.Convert.Name = "Convert";
             this.Convert.Size = new System.Drawing.Size(155, 47);
             this.Convert.TabIndex = 0;
             this.Convert.Text = "Convert File (Word, PDF)";
             this.Convert.UseVisualStyleBackColor = true;
-            this.Convert.Click += new System.EventHandler(this.Convert_Click);
+            this.Convert.Click += new System.EventHandler(this.convertPage_Click);
             // 
             // Combine
             // 
-            this.Combine.Location = new System.Drawing.Point(32, 134);
+            this.Combine.Location = new System.Drawing.Point(32, 121);
             this.Combine.Name = "Combine";
             this.Combine.Size = new System.Drawing.Size(155, 47);
             this.Combine.TabIndex = 1;
             this.Combine.Text = "Combine File";
             this.Combine.UseVisualStyleBackColor = true;
-            this.Combine.Click += new System.EventHandler(this.Combine_Click);
+            this.Combine.Click += new System.EventHandler(this.combinePage_Click);
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(32, 205);
+            this.button3.Location = new System.Drawing.Point(32, 185);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(155, 47);
             this.button3.TabIndex = 2;
             this.button3.Text = "Create File (Word, Text)";
             this.button3.UseVisualStyleBackColor = true;
-            this.button3.Click += new System.EventHandler(this.button3_Click);
+            this.button3.Click += new System.EventHandler(this.createFilePage_Click);
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(32, 278);
+            this.button4.Location = new System.Drawing.Point(32, 250);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(155, 47);
             this.button4.TabIndex = 3;
             this.button4.Text = "Create File Excel";
             this.button4.UseVisualStyleBackColor = true;
-            this.button4.Click += new System.EventHandler(this.button4_Click);
+            this.button4.Click += new System.EventHandler(this.createExcelPage_Click);
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(32, 348);
+            this.button5.Location = new System.Drawing.Point(32, 313);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(155, 47);
             this.button5.TabIndex = 4;
             this.button5.Text = "Rename File";
             this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.button5_Click);
+            this.button5.Click += new System.EventHandler(this.renamePage_Click);
             // 
             // label1
             // 
@@ -109,11 +110,22 @@
             this.pictureBox1.TabIndex = 6;
             this.pictureBox1.TabStop = false;
             // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(32, 377);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(155, 47);
+            this.button1.TabIndex = 7;
+            this.button1.Text = "Split File (PDF)";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.splitFilePage_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.button1);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
@@ -138,6 +150,7 @@
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Button button1;
     }
 }
 

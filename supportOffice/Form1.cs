@@ -10,34 +10,41 @@ namespace supportOffice
             InitializeComponent();
         }
 
-        private void Convert_Click(object sender, EventArgs e)
+        private void convertPage_Click(object sender, EventArgs e)
         {
-            Convert page1 = new Convert();
-            page1.Show();
+            Convert convertPage = new Convert();
+            convertPage.Show();
+
         }
 
-        private void Combine_Click(object sender, EventArgs e)
+        private void combinePage_Click(object sender, EventArgs e)
         {
-            Combine page2 = new Combine();
-            page2.Show();
+            Combine combinePage = new Combine();
+            combinePage.Show();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private void createFilePage_Click(object sender, EventArgs e)
         {
-            Create page3 = new Create();
-            page3.Show();
+            Create createFilePage = new Create();
+            createFilePage.Show();
         }
 
-        private void button4_Click(object sender, EventArgs e)
+        private void createExcelPage_Click(object sender, EventArgs e)
         {
-            Excel page4 = new Excel();
-            page4.Show();
+            Excel createExcelPage = new Excel();
+            createExcelPage.Show();
         }
 
-        private void button5_Click(object sender, EventArgs e)
+        private void renamePage_Click(object sender, EventArgs e)
         {
-            Rename page5 = new Rename();
-            page5.Show();
+            Rename renamePage = new Rename();
+            renamePage.Show();
+        }
+
+        private void splitFilePage_Click(object sender, EventArgs e)
+        {
+            SplitFile splitFilePage = new SplitFile();
+            splitFilePage.Show();
         }
     }
 }

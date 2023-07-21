@@ -1,7 +1,5 @@
 ﻿using System;
-using System.Diagnostics;
 using System.IO;
-using System.Linq;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
 using IronPdf;
@@ -66,6 +64,14 @@ namespace supportOffice
                     IronPdf.PdfDocument doc = ImageToPdfConverter.ImageToPdf(Savet1.Text, IronPdf.Imaging.ImageBehavior.CropPage);
                     doc.SaveAs(urlSave);
                     break;
+                case 3:
+                    urlOpen = Savet1.Text;
+                    urlSave = Savet2.Text + "/" + Path.GetFileNameWithoutExtension(urlOpen) + ".png";
+                    var pdf = IronPdf.PdfDocument.FromFile(urlOpen);
+
+                    // Extract all pages to a folder as image files
+                    pdf.RasterizeToImageFiles(urlSave, 400, 200);
+                    break;
                 case 0:
                 default:
                     urlOpen = Savet1.Text.Replace(".pdf", ".docx");
@@ -82,10 +88,16 @@ namespace supportOffice
             label1.Text = "Word to PDF";
         }
 
-        private void radioButton1_Click(object sender, EventArgs e)
+        private void optionItP_CheckedChanged(object sender, EventArgs e)
         {
             option = 2;
             label1.Text = "Image to PDF";
+        }
+
+        private void optionPtI_CheckedChanged(object sender, EventArgs e)
+        {
+            option = 3;
+            label1.Text = "PDF to Image";
         }
     }
 }

@@ -29,6 +29,8 @@
         private void InitializeComponent()
         {
             this.panelCombine = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.Savet3 = new System.Windows.Forms.TextBox();
             this.button3 = new System.Windows.Forms.Button();
@@ -37,8 +39,6 @@
             this.optionP = new System.Windows.Forms.RadioButton();
             this.optionW = new System.Windows.Forms.RadioButton();
             this.label2 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.panelCombine.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,6 +59,24 @@
             this.panelCombine.Name = "panelCombine";
             this.panelCombine.Size = new System.Drawing.Size(642, 537);
             this.panelCombine.TabIndex = 11;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(263, 346);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(112, 13);
+            this.label3.TabIndex = 13;
+            this.label3.Text = "Address Folder Output";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(263, 202);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(96, 13);
+            this.label1.TabIndex = 12;
+            this.label1.Text = "Address Files Input";
             // 
             // button5
             // 
@@ -143,24 +161,6 @@
             this.label2.Size = new System.Drawing.Size(155, 37);
             this.label2.TabIndex = 0;
             this.label2.Text = "Combine";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(263, 202);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(96, 13);
-            this.label1.TabIndex = 12;
-            this.label1.Text = "Address Files Input";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(263, 346);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(112, 13);
-            this.label3.TabIndex = 13;
-            this.label3.Text = "Address Folder Output";
             // 
             // Combine
             // 
